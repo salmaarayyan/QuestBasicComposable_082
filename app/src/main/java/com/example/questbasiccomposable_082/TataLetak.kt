@@ -113,4 +113,13 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 .height(110.dp)
                 .background(color = Color.Yellow),
             contentAlignment = Alignment.Center
-        )
+        ) {
+            /* Bagian atas berisi kolom dan row */
+            Column() {
+                /* Row pertama berisi tiga teks sejajar */
+                Row(modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly) {
+                    Text(text = "Col1_Row1_Komponen1")
+                    Text(text = "Col1_Row1_Komponen2")
+                    Text(text = "Col1_Row1_Komponen3")
+                }

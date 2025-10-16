@@ -32,3 +32,16 @@ fun TataletakColumn(modifier: Modifier) { // Mendefinisikan Composable Column da
         Text(text = "Komponen4")
     }
 }
+
+@Composable
+fun TataletakRow(modifier: Modifier) { // Mendefinisikan Composable Row dasar.
+    Row(
+        modifier = modifier.fillMaxWidth(), // Mengisi lebar maksimum yang tersedia.
+        horizontalArrangement = Arrangement.SpaceEvenly // Mengatur jarak yang sama antara elemen-elemen secara horizontal.
+    ) {
+        Text(text = "Komponen1")
+        Text(text = "Komponen2")
+        Text(text = "Komponen3")
+        Text(text = "Komponen4")
+    }
+}

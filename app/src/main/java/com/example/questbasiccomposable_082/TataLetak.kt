@@ -142,3 +142,21 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 .background(color = Color.Cyan),
             contentAlignment = Alignment.Center
         )
+        {
+            //Menampilkan gambar dari resource
+            Image(painter = gambar,
+                contentDescription = null,
+                contentScale = ContentScale.Fit)
+
+            // Teks besar My Music ditampilkan di tengah gambar
+            Text(
+                text = "My Music",
+                fontSize = 50.sp,
+                color = Color.Red,
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Cursive,
+                modifier = Modifier.align(alignment = Alignment.Center)
+            )
+        }
+    }
+}

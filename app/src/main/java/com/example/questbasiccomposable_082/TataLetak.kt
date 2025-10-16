@@ -22,3 +22,13 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
+@Composable
+fun TataletakColumn(modifier: Modifier) { // Mendefinisikan Composable Column dasar.
+    Column(modifier = modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp)) { // Mengatur tata letak vertikal (Column) dengan padding di atas, kiri, dan kanan.
+        Text(text = "Komponen1")
+        Text(text = "Komponen2")
+        Text(text = "Komponen3")
+        Text(text = "Komponen4")
+    }
+}
